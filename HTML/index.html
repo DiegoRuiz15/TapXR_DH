@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TapXR — Tecnología de Interacción</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f0f2f9;
+            color: #1a1a1a;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px 10%;
+            background: linear-gradient(135deg, #0b7bcc, #6a4cff);
+            color: white;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .hero-content {
+            max-width: 450px;
+        }
+        .hero-content h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+        .hero-content p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: white;
+            color: #0b7bcc;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #eaeaea;
+        }
+        .hero-images {
+            display: flex;
+            gap: 15px;
+        }
+        .hero-img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 15px 0;
+            background: white;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #0b7bcc;
+            font-weight: bold;
+        }
+        .container {
+            padding: 40px 10%;
+        }
+        .section {
+            margin-bottom: 60px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .timeline {
+            list-style: none;
+            padding: 0;
+        }
+        .timeline li {
+            background: white;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .timeline span {
+            background: #0b7bcc;
+            color: white;
+            width: 30px;
+            height: 30px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b7bcc;
+            color: white;
+            margin-top: 40px;
+        }
+        #fuentes a {
+            color: #0b7bcc;
+            text-decoration: none;
+        }
+        #fuentes a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>TapXR</h1>
+            <p>La pulsera inteligente que convierte tus dedos en un teclado y un ratón invisible.</p>
+            <a href="#que-es" class="btn">Descubrir más</a>
+        </div>
+        <div class="hero-images">
+            <img src="https://www.tapwithus.com/wp-content/uploads/2023/08/Tap-XR-Hero-Image.webp" alt="TapXR" class="hero-img">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <a href="#que-es">Qué es</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#evolucion">Evolución</a>
+        <a href="#fotos">Fotos</a>
+        <a href="#fuentes">Fuentes</a>
+    </nav>
+
+    <main class="container">
+        <section id="que-es" class="section fade">
+            <h2>¿Qué es TapXR?</h2>
+            <p>
+                <strong>TapXR</strong> es un dispositivo wearable basado en sensores avanzados que detectan los
+                movimientos de los dedos. Cada combinación de taps corresponde a letras, comandos o acciones,
+                permitiendo escribir y controlar dispositivos sin un teclado físico.
+            </p>
+        </section>
+
+        <section id="beneficios" class="section fade">
+            <h2>Beneficios</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3> Interacción Natural</h3>
+                    <p>Tus dedos se convierten en un método de entrada preciso y rápido.</p>
+                </div>
+                <div class="card">
+                    <h3> Pensado para XR</h3>
+                    <p>Ideal para visores VR/AR donde un teclado físico es incómodo.</p>
+                </div>
+                <div class="card">
+                    <h3> Portabilidad Total</h3>
+                    <p>Se usa como una pulsera; no requiere superficies planas.</p>
+                </div>
+                <div class="card">
+                    <h3> Control Gestual</h3>
+                    <p>El modo AirMouse permite mover el cursor con solo girar la muñeca.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="evolucion" class="section fade">
+            <h2>Evolución</h2>
+            <p>
+                TapXR es la evolución del antiguo <strong>Tap Strap</strong>, un sistema de rings con sensores individuales.
+                La nueva versión integra toda la electrónica en una sola pulsera, mejora la ergonomía y aumenta la
+                precisión de detección gestual.
+            </p>
+
+            <ul class="timeline">
+                <li>
+                    <span>1</span>
+                    <div>Dispositivos previos: Tap Strap y guantes sensoriales.</div>
+                </li>
+                <li>
+                    <span>2</span>
+                    <div>Integración en una pulsera con sensores avanzados.</div>
+                </li>
+                <li>
+                    <span>3</span>
+                    <div>Optimización para AR/VR y movilidad.</div>
+                </li>
+            </ul>
+        </section>
+
+        <section id="fotos" class="section fade">
+            <h2>Galería</h2>
+            <div class="gallery">
+                <img src="https://www.tapwithus.com/wp-content/uploads/2023/08/tap-quest.webp" alt="TapXR Imagen 1">
+                <img src="https://www.tapwithus.com/wp-content/uploads/2023/11/tapxr-tv-control.webp" alt="TapXR Imagen 2">
+                <img src="https://www.tapwithus.com/wp-content/uploads/2023/08/tapxr-creators.webp" alt="TapXR Imagen 3">
+            </div>
+        </section>
+
+        <section id="fuentes" class="section fade">
+            <h2>Fuentes</h2>
+            <ul>
+                <li><a href="https://www.tapwithus.com/product/tap-xr/" target="_blank">Web oficial de TapXR</a></li>
+                <li><a href="https://newatlas.com/wearables/tapxr-bracelet-finger-taps-control-devices/" target="_blank">NewAtlas</a></li>
+                <li><a href="https://www.tapwithus.com/wp-content/uploads/2023/08/tapxr-creators.webp" target="_blank">KBD.news Review</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        Página creada para trabajo académico · TapXR © 2025
+    </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f0f2f9;
+    color: #1a1a1a;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background: linear-gradient(135deg, #0b7bcc, #6a4cff);
+    color: white;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.hero-content {
+    max-width: 450px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: white;
+    color: #0b7bcc;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #eaeaea;
+}
+
+.hero-images {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 15px 0;
+    background: white;
+    position: sticky;
+    top: 0;
+}
+.nav a {
+    text-decoration: none;
+    color: #0b7bcc;
+    font-weight: bold;
+}
+
+.container {
+    padding: 40px 10%;
+}
+
+.section {
+    margin-bottom: 60px;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+}
+.timeline li {
+    background: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.timeline span {
+    background: #0b7bcc;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 15px;
+}
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #0b7bcc;
+    color: white;
+    margin-top: 40px;
+}
